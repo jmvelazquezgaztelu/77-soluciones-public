@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script>
+      // Enable the loading state before the first paint, with a fail-safe.
+      document.documentElement.classList.add("hero-loading");
+      window.setTimeout(function () {
+        document.documentElement.classList.remove("hero-loading");
+      }, 5000);
+    </script>
+    <title>77 Soluciones - Desarrollo a medida</title>
+    <meta name="description" content="77 Soluciones: desarrollo de software a medida, aplicaciones web de gestión, integraciones y mantenimiento, con experiencia en backend y trato directo." />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <link
+      href="assets/vendor/swiper/swiper-bundle.min.css?v=1.0.0"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img
+            src="assets/img/77-soluciones-oscuro.webp"
+            class="logo-initial"
+            alt="77 Soluciones"
+          />
+          <img
+            src="assets/img/77-soluciones-principal.webp"
+            class="logo-scrolled"
+            alt="77 Soluciones"
+          />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul id="navmenu-links">
+            <li><a href="#hero" class="active">Inicio</a></li>
+            <li><a href="#about">Qué hacemos</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#portfolio">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+          <button
+            type="button"
+            class="mobile-nav-toggle d-xl-none bi bi-list"
+            aria-label="Abrir menú de navegación"
+            aria-controls="navmenu-links"
+            aria-expanded="false"
+          ></button>
+        </nav>
+
+        <a class="cta-btn" href="#contact">Solicita presupuesto</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="hero section dark-background"
+        style="
+          background-image: url(&quot;assets/img/inicio/storm-portada.webp&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="info d-flex align-items-center">
+          <div class="container">
+            <div
+              class="row justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="col-lg-8 text-center">
+                <p class="hero-eyebrow">DESARROLLO DE SOFTWARE A MEDIDA</p>
+                <h1>Hoy es un día perfecto.</h1>
+                <p>
+                  Un día perfecto para dar un impulso a tus proyectos, para
+                  transformar tu negocio, para alcanzar tus metas. En 77
+                  Soluciones estamos preparados para ayudarte a digitalizar tu
+                  negocio, para llevarlo al siguiente nivel, para convertir tus
+                  ideas en realidad.
+                </p>
+                <a href="#contact" class="btn-get-started"
+                  >Impulsa tu negocio</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>QUÉ HACEMOS</h2>
+          <p>77 Soluciones</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-4 position-relative">
+              <div class="about-img" data-aos="fade-right">
+                <img
+                  src="assets/img/about/about-77-soluciones.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="experience-badge" data-aos="fade-up">
+                <h2>12+</h2>
+                <p>Años en<br />el sector</p>
+              </div>
+              <div class="projects-badge" data-aos="fade-left">
+                <h2><i class="bi bi-code-slash" aria-hidden="true"></i></h2>
+                <p>Software<br />a medida</p>
+              </div>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-left">
+              <h2 class="display-4 fw-bold mb-4">
+                Desarrollo de software a medida para tu negocio
+              </h2>
+              <p class="lead mb-4">
+                Desarrollamos aplicaciones y soluciones web adaptadas a las
+                necesidades reales de cada organización. Combinamos más de 12
+                años de experiencia en el sector con un trato directo, flexible
+                y personalizado.
+              </p>
+
+              <div class="features">
+                <div class="feature-item mb-4" data-aos="fade-up">
+                  <div class="feature-icon">
+                    <i class="bi bi-rocket-takeoff"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Aplicaciones adaptadas a cada proyecto</h4>
+                    <p>
+                      Desarrollamos aplicaciones web de gestión, plataformas
+                      internas e integraciones para tus procesos de negocio.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="feature-item mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="feature-icon">
+                    <i class="bi bi-globe2"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Experiencia técnica consolidada</h4>
+                    <p>
+                      Somos un estudio independiente de desarrollo de software,
+                      especializado en backend.
+                    </p>
+                  </div>
+                </div>
+
+                <ul class="check-list" data-aos="fade-up" data-aos-delay="200">
+                  <li>
+                    <i class="bi bi-check-circle"></i> Colaboración directa y
+                    flexible.
+                  </li>
+                </ul>
+
+                <a
+                  href="#contact"
+                  class="btn btn-primary btn-lg mt-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  >Hablemos de tu proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+      <!-- Tecnologias Section -->
+      <section id="clients" class="clients section light-background">
+        <div class="container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 24
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 32
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 40
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 48
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/android.webp"
+                  class="img-fluid"
+                  alt="Android"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/wordpress.webp"
+                  class="img-fluid"
+                  alt="WordPress"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/png-transparent-drupal-plain-logo-icon.png"
+                  class="img-fluid"
+                  alt="Drupal"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/laravel-logo-png-svg.png"
+                  class="img-fluid"
+                  alt="Laravel"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/symfony-logo.png"
+                  class="img-fluid"
+                  alt="Symfony"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/Woocommerce_logo.png"
+                  class="img-fluid"
+                  alt="WooCommerce"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/javascript_logo.png"
+                  class="img-fluid"
+                  alt="JavaScript"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/vuejs_original_wordmark_logo_icon_146305.png"
+                  class="img-fluid"
+                  alt="Vue.js"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/react_logo.png"
+                  class="img-fluid"
+                  alt="React"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/docker_icon_146192.png"
+                  class="img-fluid"
+                  alt="Docker"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/tecnologias/ubuntu_plain_wordmark_logo_icon_146632.png"
+                  class="img-fluid"
+                  alt="Ubuntu"
+                  width="120"
+                  height="72"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Tecnologias Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>SERVICIOS</h2>
+          <p>Soluciones tecnológicas adaptadas a cada proyecto.</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-12">
+              <div class="services-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "slidesPerView": 1,
+                    "spaceBetween": 20,
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000,
+                      "pauseOnMouseEnter": true,
+                      "disableOnInteraction": true
+                    },
+                    "navigation": {
+                      "nextEl": "#services .swiper-nav-next",
+                      "prevEl": "#services .swiper-nav-prev"
+                    },
+                    "breakpoints": {
+                      "320": {
+                        "slidesPerView": 1
+                      },
+                      "768": {
+                        "slidesPerView": 2
+                      },
+                      "992": {
+                        "slidesPerView": 3
+                      }
+                    },
+                    "keyboard": {
+                      "enabled": true,
+                      "onlyInViewport": true
+                    },
+                    "a11y": {
+                      "prevSlideMessage": "Servicio anterior",
+                      "nextSlideMessage": "Servicio siguiente",
+                      "slideLabelMessage": "Servicio {{index}} de {{slidesLength}}"
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="service-card">
+                      <div class="icon-box">
+                        <i class="bi bi-window-stack" aria-hidden="true"></i>
+                      </div>
+                      <div class="content">
+                        <h4>APLICACIONES A MEDIDA</h4>
+                        <p>
+                          Desarrollamos aplicaciones web, plataformas de gestión
+                          y herramientas adaptadas a los procesos de cada
+                          organización.
+                        </p>
+                        <div class="service-number">01</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="service-card">
+                      <div class="icon-box">
+                        <i class="bi bi-globe2" aria-hidden="true"></i>
+                      </div>
+                      <div class="content">
+                        <h4>DESARROLLO WEB</h4>
+                        <p>
+                          Creamos e implementamos sitios web corporativos,
+                          portales y soluciones basadas en WordPress y otras
+                          tecnologías.
+                        </p>
+                        <div class="service-number">02</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="service-card">
+                      <div class="icon-box">
+                        <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                      </div>
+                      <div class="content">
+                        <h4>BACKEND E INTEGRACIONES</h4>
+                        <p>
+                          Desarrollamos APIs, conectamos sistemas y
+                          automatizamos procesos para que las aplicaciones
+                          trabajen conjuntamente.
+                        </p>
+                        <div class="service-number">03</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="service-card">
+                      <div class="icon-box">
+                        <i class="bi bi-hdd-network" aria-hidden="true"></i>
+                      </div>
+                      <div class="content">
+                        <h4>INFRAESTRUCTURA Y DESPLIEGUES</h4>
+                        <p>
+                          Configuramos y mantenemos servidores, entornos Docker
+                          y procesos de despliegue para llevar tus aplicaciones
+                          a producción de forma controlada y segura.
+                        </p>
+                        <div class="service-number">04</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="service-card">
+                      <div class="icon-box">
+                        <i class="bi bi-tools" aria-hidden="true"></i>
+                      </div>
+                      <div class="content">
+                        <h4>MANTENIMIENTO Y EVOLUCIÓN</h4>
+                        <p>
+                          Mantenemos, actualizamos y mejoramos aplicaciones
+                          existentes para que sigan respondiendo a las
+                          necesidades de cada organización.
+                        </p>
+                        <div class="service-number">05</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="service-card">
+                      <div class="icon-box">
+                        <i class="bi bi-people" aria-hidden="true"></i>
+                      </div>
+                      <div class="content">
+                        <h4>COLABORACIÓN TÉCNICA</h4>
+                        <p>
+                          Colaboramos con agencias y equipos de desarrollo
+                          aportando experiencia especializada para sus
+                          proyectos.
+                        </p>
+                        <div class="service-number">06</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="swiper-navigation">
+                <button
+                  type="button"
+                  class="swiper-nav-prev"
+                  aria-label="Servicio anterior"
+                >
+                  <i class="bi bi-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button
+                  type="button"
+                  class="swiper-nav-next"
+                  aria-label="Servicio siguiente"
+                >
+                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Call To Action Section -->
+      <section
+        id="call-to-action"
+        class="call-to-action section dark-background"
+      >
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row justify-content-center">
+            <div
+              class="col-lg-8 text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="cta-content">
+                <img
+                  src="assets/img/logo/77-soluciones-oscuro.png"
+                  class="cta-logo"
+                  alt="77 Soluciones"
+                  width="2172"
+                  height="724"
+                  loading="lazy"
+                />
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p class="lead">
+                  Cuéntanos qué necesitas. Te ayudamos a encontrar la solución
+                  técnica que mejor se adapte a tu proyecto.
+                </p>
+                <div class="cta-buttons">
+                  <a href="#contact" class="btn btn-primary"
+                    >Hablemos de tu proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Call To Action Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title">
+          <h2>PROYECTOS</h2>
+          <p>Algunos ejemplos de las soluciones que desarrollamos.</p>
+          <p class="small mt-2">
+            Las imágenes son representaciones ilustrativas de las soluciones,
+            no capturas de proyectos de clientes.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 portfolio-item">
+              <article class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="assets/img/portfolio/01-plataforma-clientes.webp"
+                    alt="Panel de administración de una plataforma de gestión"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="portfolio-info">
+                  <h3>PLATAFORMA DE GESTIÓN</h3>
+                  <p>
+                    Aplicaciones de administración a medida, con paneles de
+                    control, gestión de usuarios, formularios y herramientas
+                    para organizar procesos internos.
+                  </p>
+                  <p class="portfolio-tech-label">Tecnologías orientativas:</p>
+                  <div class="portfolio-tags">
+                    <span>Laravel</span>
+                    <span>Filament</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 portfolio-item">
+              <article class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="assets/img/portfolio/02-sistema-reservas-front.webp"
+                    alt="Interfaz de un sistema de reservas online"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="portfolio-info">
+                  <h3>SISTEMA DE RESERVAS</h3>
+                  <p>
+                    Plataformas de inscripción y reservas online, con gestión de
+                    participantes, pagos y seguimiento administrativo.
+                  </p>
+                  <p class="portfolio-tech-label">Tecnologías orientativas:</p>
+                  <div class="portfolio-tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>Integraciones de pago</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4 portfolio-item">
+              <article class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="assets/img/portfolio/03-soluciones-wordpress-front.webp"
+                    alt="Interfaz de una solución WordPress"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="portfolio-info">
+                  <h3>SOLUCIONES WORDPRESS</h3>
+                  <p>
+                    Desarrollo de funcionalidades personalizadas, plugins,
+                    integraciones y herramientas de administración para
+                    proyectos basados en WordPress.
+                  </p>
+                  <p class="portfolio-tech-label">Tecnologías orientativas:</p>
+                  <div class="portfolio-tags">
+                    <span>WordPress</span>
+                    <span>PHP</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <div class="container section-title">
+          <h2>CONTACTO</h2>
+          <p>¿Hablamos de tu próximo proyecto?</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-main-wrapper">
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Correo electrónico</h3>
+                <p>
+                  <a href="mailto:info@77soluciones.com"
+                    >info@77soluciones.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              class="contact-form-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h3 id="contact-form-heading">Cuéntanos tu idea</h3>
+              <p>
+                ¿Necesitas desarrollar una aplicación, mejorar una solución
+                existente o incorporar apoyo técnico a tu proyecto? Escríbenos y
+                hablamos.
+              </p>
+              <p id="contact-form-notice" class="contact-form-notice">
+                El formulario está pendiente de configuración. Mientras tanto,
+                puedes escribirnos a
+                <a href="mailto:info@77soluciones.com">info@77soluciones.com</a
+                >.
+              </p>
+              <form
+                action="https://api.web3forms.com/submit"
+                method="post"
+                class="contact-form"
+                aria-labelledby="contact-form-heading"
+                aria-describedby="contact-form-notice"
+                autocomplete="off"
+              >
+                <!-- Disabled until the JavaScript submission handler is installed. -->
+                <fieldset disabled>
+                  <legend class="visually-hidden">
+                    Datos de contacto y mensaje
+                  </legend>
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="68e19b0b-8aeb-4135-b43e-f60bc5f19d1e"
+                  />
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    class="d-none"
+                    tabindex="-1"
+                    aria-hidden="true"
+                  />
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="contact-name" class="form-label"
+                        >Nombre</label
+                      >
+                      <input
+                        type="text"
+                        name="name"
+                        id="contact-name"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contact-email" class="form-label"
+                        >Correo electrónico</label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        id="contact-email"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="contact-message" class="form-label"
+                        >Mensaje</label
+                      >
+                      <textarea
+                        name="message"
+                        id="contact-message"
+                        class="form-control"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="contact-privacy" id="contact-privacy">
+                    <!-- Local testing only: review the privacy policy and acceptance wording before publishing. -->
+                    <div class="form-check mt-3">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="contact-consent"
+                        name="privacy_consent"
+                        value="accepted"
+                        required
+                        disabled
+                      />
+                      <label class="form-check-label" for="contact-consent">
+                        He leído la
+                        <a
+                          class="contact-privacy-link"
+                          href="privacidad.html"
+                          >política de privacidad</a
+                        >.
+                      </label>
+                    </div>
+                    <details class="contact-privacy-details small mt-2">
+                      <summary>Información básica sobre protección de datos</summary>
+                      <p class="mt-2 mb-0">
+                        <strong>Responsable:</strong> 77 Soluciones (actividad
+                        profesional de titularidad individual).
+                        <strong>Finalidad:</strong> atender tu consulta.
+                        <strong>Base jurídica:</strong> medidas precontractuales a
+                        petición del interesado o interés legítimo en responder,
+                        según la consulta. <strong>Destinatarios:</strong>
+                        Web3Forms/Web3Creative y proveedores técnicos, con posibles
+                        transferencias fuera del EEE. <strong>Derechos:</strong>
+                        acceso, rectificación, supresión y otros derechos en
+                        <a href="mailto:info@77soluciones.com">info@77soluciones.com</a>.
+                        <a href="privacidad.html">Consulta la política de privacidad
+                          y la identificación legal completa del responsable</a>.
+                      </p>
+                    </details>
+                  </div>
+                  <div
+                    class="contact-form-status"
+                    role="status"
+                    aria-live="polite"
+                    aria-atomic="true"
+                  ></div>
+                  <div class="form-submit">
+                    <button type="submit" disabled>Enviar mensaje</button>
+                  </div>
+                </fieldset>
+              </form>
+              <noscript
+                ><p>
+                  Activa JavaScript para utilizar el formulario o escríbenos por
+                  correo electrónico.
+                </p></noscript
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>
+                  © <span>Copyright</span>
+                  <strong class="px-1 sitename">77 Soluciones</strong>
+                  <span>2026</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="footer-bottom-links">
+                <a href="aviso-legal.html">Aviso legal</a>
+                <a href="privacidad.html">Privacidad</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      aria-label="Volver arriba"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short" aria-hidden="true"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <script src="assets/js/contact.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js?v=1.0.0"></script>
+  </body>
+</html>
